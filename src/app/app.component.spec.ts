@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ng-deploy'`, () => {
+  it(`should have as title 'projectPosts'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ng-deploy');
+    expect(app.title).toEqual('projectPosts');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('ng-deploy app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('projectPosts app is running!');
   });
 });
